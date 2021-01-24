@@ -169,7 +169,7 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.FileHandler',
-            'filename': os.path.dirname(os.path.dirname(os.path.dirname(__file__))) + '/application.log',
+            'filename': BASE_DIR + '/application.log',
             'formatter': 'verbose',
         },
     },
