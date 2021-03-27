@@ -1,0 +1,12 @@
+sudo usermod -aG docker ${USER} [Add user to docker group]
+su ${USER}
+sudo systemctl restart docker
+
+
+sudo chmod 666 /var/run/docker.sock [To resolve permission issue]
+
+docker images [List all images]
+
+docker build . -t lms-v0.0 [Building an image]
+
+docker build -t harish/lms-v0.0 . [Updating the build image ]
